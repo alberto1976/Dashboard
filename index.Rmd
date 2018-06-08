@@ -15,16 +15,10 @@ Column {data-width=650}
 
 ### Chart A
 
-```{r}
 
-library(leaflet)
+<iframe src="https://estadisticaun.github.io/G_Aspirantes/20181/Pre/Nac_col1.html" width="1200" height="860" style="border: 0" mozallowfullscreen="true" webkitallowfullscreen="true" allowfullscreen="true"><a href="https://estadisticaun.github.io/G_Aspirantes/20181/Pre/Nac_col1.html" target="_blank">OECD Chart: Real GDP forecast, Total, Annual growth rate (%), Annual, 2019</a></iframe>
 
-m <- leaflet() %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
-m  # Print the map
 
-```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
@@ -40,7 +34,16 @@ ggplot(iris, aes(x = Sepal.Width, y = Petal.Length , col = Species)) + geom_poin
 
 ### Chart C
 
+
+
 ```{r}
-plot(iris$Sepal.Length, iris$Petal.Width, col = "green")
+
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
+m  # Print the map
+
 ```
 
