@@ -16,7 +16,8 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-
+library(ggplot2)
+ggplot(iris, aes(x = Sepal.Width, y = Petal.Length , col = Species)) + geom_point(size =5)
 ```
 
 Column {data-width=350}
